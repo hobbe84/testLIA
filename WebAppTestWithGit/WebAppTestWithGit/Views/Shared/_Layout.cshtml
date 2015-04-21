@@ -6,12 +6,17 @@
     <title>@ViewBag.Title - Testar med GitHub</title>
     
     @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-        <link href="~/Content/styles.css" rel="stylesheet" />
-        
+    @Scripts.Render("~/bundles/modernizr")
+
+          
     <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 <body>
@@ -35,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -46,5 +52,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
