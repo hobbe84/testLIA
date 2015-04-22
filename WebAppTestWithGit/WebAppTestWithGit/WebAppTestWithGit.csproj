@@ -185,6 +185,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Icon.png" />
     <Content Include="pictures\bild_ag.JPG" />
+    <Content Include="pictures\flagga_skane.png" />
+    <Content Include="pictures\island_flagga.jpg" />
+    <Content Include="pictures\pipa.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -241,6 +244,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Studentinfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
