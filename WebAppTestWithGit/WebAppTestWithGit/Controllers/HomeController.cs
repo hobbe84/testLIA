@@ -15,14 +15,14 @@ namespace WebAppTestWithGit.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Om denna site.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Kontaktuppgifter.";
 
             return View();
         }
