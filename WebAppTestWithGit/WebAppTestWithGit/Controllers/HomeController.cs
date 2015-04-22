@@ -26,5 +26,12 @@ namespace WebAppTestWithGit.Controllers
 
             return View();
         }
+
+        public ActionResult Studentinfo()
+        {
+            ViewBag.Message = "Student Info.";
+
+            return View();
+        }
     }
 }
