@@ -33,5 +33,11 @@ namespace WebAppTestWithGit.Controllers
 
             return View();
         }
+
+        public ActionResult StudentDiary()
+        {
+            ViewBag.Message = "Student Dagbok.";
+            return View();
+        }
     }
 }

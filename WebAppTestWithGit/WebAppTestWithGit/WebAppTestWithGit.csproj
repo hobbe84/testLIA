@@ -179,12 +179,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\half-slider.css" />
+    <Content Include="Content\diarystyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Icon.png" />
     <Content Include="pictures\bild_ag.JPG" />
+    <Content Include="pictures\bild_ag_mini.jpg" />
     <Content Include="pictures\flagga_skane.png" />
     <Content Include="pictures\island_flagga.jpg" />
     <Content Include="pictures\pipa.jpg" />
@@ -245,6 +247,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Studentinfo.cshtml" />
+    <Content Include="Views\Home\StudentDiary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
