@@ -248,6 +248,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Studentinfo.cshtml" />
     <Content Include="Views\Home\StudentDiary.cshtml" />
+    <Content Include="Views\Home\_DiaryWeek17.cshtml" />
+    <Content Include="Views\Home\_DiaryWeek18.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

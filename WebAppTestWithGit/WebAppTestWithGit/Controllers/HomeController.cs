@@ -39,5 +39,10 @@ namespace WebAppTestWithGit.Controllers
             ViewBag.Message = "Student Dagbok.";
             return View();
         }
+
+        public ActionResult LoadPartialViewWeek18()
+        {
+            return View("_DiaryWeek18");
+        }
     }
 }
