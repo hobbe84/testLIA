@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "StudentDiary";
+}
+
+
+
+
+ <!-- ******HEADER****** -->
+<header class="header">
+    <div class="container">
+        <img class="profile-image img-responsive pull-left" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/c33.33.414.414/s160x160/1238882_635070743180685_560845141_n.jpg?oh=f6066ef7961a55a2cfbf0ef0fcaac669&oe=55D84214&__gda__=1436601592_adcbb8866ae7046fbc6ed7e4ac5e42d7" alt="James Lee" />
+        <div class="profile-content pull-left">
+            <h1 class="name">Andreas Gidö</h1>
+            <h2 class="desc">Dagbok under LIA period 1</h2>
+            <ul class="social list-inline">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li>
+            </ul>
+        </div><!--//profile-->
+        <a class="btn btn-cta-primary pull-right" href="#" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+    </div><!--//container-->
+</header><!--//header-->
+
+<div class="container-fluid" style="margin-top:200px; margin-bottom: 30px;">
+    <div class=" col-md-2" style="margin-top: 10px;">
+        <div id="weekNav">
+            <div>
+                @Ajax.ActionLink("Vecka 17", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek17" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 18", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek18" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 19", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek19" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 17", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek20" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 18", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek21" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 19", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek22" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 17", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek23" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 18", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek24" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+
+            <div>
+                @Ajax.ActionLink("Vecka 19", "LoadPartialViewWeek", "Home", new { page = "../Shared/_DiaryWeek25" }, new AjaxOptions { UpdateTargetId = "targetDiv", InsertionMode = InsertionMode.Replace })
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-9" style="margin-top: 50px;">
+        <h1 class="title" style="color: #3aaa64; text-align: center;">Dagboken</h1>
+        <div id="targetDiv">
+            
+        </div>
+    </div>
+</div>
+
+
+

@@ -34,15 +34,34 @@ namespace WebAppTestWithGit.Controllers
             return View();
         }
 
-        public ActionResult StudentDiary()
+        public ActionResult StudentDiaryAS()
         {
-            ViewBag.Message = "Student Dagbok.";
+            ViewBag.Message = "Student Dagbok - AsGeir.";
             return View();
         }
 
-        public ActionResult LoadPartialViewWeek18()
+        public ActionResult StudentDiaryTH()
         {
-            return View("_DiaryWeek18");
+            ViewBag.Message = "Student Dagbok - Tobias.";
+            return View();
+        }
+
+        public ActionResult StudentDiaryAG()
+        {
+            ViewBag.Message = "Student Dagbok - Andreas.";
+            return View();
+        }
+
+        public PartialViewResult LoadPartialViewWeek(string page)
+        {
+            if (page == null)
+            {
+                return PartialView("../Shared/_DiaryWeek17");
+            }
+            else
+            {
+                return PartialView(page); 
+            }           
         }
     }
 }
