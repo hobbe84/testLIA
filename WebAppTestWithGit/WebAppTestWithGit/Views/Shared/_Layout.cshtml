@@ -6,8 +6,11 @@
     <title>@ViewBag.Title - Testar med GitHub</title>
 
     <link href="~/Content/customstyle.css" rel="stylesheet" />
-        @Styles.Render("~/Content/css")
-        <link href="~/Content/customstyle.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/customstyle.css" rel="stylesheet" />
+    <link href="~/Content/half-slider.css" rel="stylesheet" />
+    <link href="~/Content/diarystyles.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
     
     <link id="theme-style" rel="stylesheet" href="~/Content/diarystyles.css">
@@ -58,6 +61,19 @@
     @Scripts.Render("~/bundles/bootstrap")
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+    $(function () {
+        $.ajax({
+            type: 'POST',
+            url: '../Shared/_DiaryWeek17',
+            dataType: 'html',
+            success: function (data) {
+                $("targetDiv").append(data);
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
