@@ -193,6 +193,7 @@
     <Content Include="pictures\flagga_skane.png" />
     <Content Include="pictures\island_flagga.jpg" />
     <Content Include="pictures\pipa.jpg" />
+    <Content Include="pictures\whitewall.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
