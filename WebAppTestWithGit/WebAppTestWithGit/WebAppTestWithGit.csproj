@@ -265,6 +265,7 @@
     <Content Include="Views\Shared\_DiaryWeek20.cshtml" />
     <Content Include="Views\Shared\_DiaryWeek21.cshtml" />
     <Content Include="Views\Shared\_DiaryWeek22.cshtml" />
+    <Content Include="Views\Shared\_DiaryWeek23.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
